@@ -1,0 +1,10 @@
+tensorflow
+numpy
+argparse
+bisect
+random
+typing
+tqdm
+pandas
+sklearn
+matplotlib
