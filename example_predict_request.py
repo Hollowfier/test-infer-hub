@@ -46,7 +46,7 @@ if __name__ == "__main__":
     # Input is a python dictionary. To get a valid json you can use:
     json_input = json.dumps(input)
     # or:
-    json_input = open("inferencehub/input_sample.json", "rb").read().decode('utf-8')
+    json_input = open("inferencehub/input_sample.json", "rb")
 
     # This will time out a few times, when you try it. This is because our server first needs to warm up.
     # After a few times you will get an answer.
