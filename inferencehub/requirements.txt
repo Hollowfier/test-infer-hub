@@ -1,10 +1,8 @@
+# The following two packages are enough. Those are the only ones used
 tensorflow
-numpy
-argparse
-bisect
-random
-typing
-tqdm
 pandas
-sklearn
-matplotlib
+
+# This is the reason your Deployment failed.
+# Those packages are included in the Python Standard Library and cannot be installed via pip
+# bisect
+# random
