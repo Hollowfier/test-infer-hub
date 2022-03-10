@@ -41,7 +41,7 @@ def preprocess_function(input_payload: BytesIO) -> tf.Tensor:
     # If the chosen entries are the wrong ones, feel free to fix it and contact us (support@dmesh.io),
     # so we can redeploy your model.
     # A convenient way for redeployment is currently in development, so for now we can do it manually for you.
-    df_ml.drop(df_ml.columns[[0, 1, 2, 4, 5]], axis = 1, inplace = True)
+    df_ml = df_ml.iloc[:, 0:4]
 
     # Tensorflow automatically converts numpy arrays to tf.Tensors, so it is sufficient to return a numpy array
     df_ml = df_ml.to_numpy()

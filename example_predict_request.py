@@ -40,7 +40,8 @@ if __name__ == "__main__":
     # This is how a pd.Dataframe is formatted when using df.to_json() and
     # how pandas expects it when using pd.read_json(), which is used in inference.py.
 
-    input = {"start": {"10": 13.376}, "color_0": {"10": 0}, "color_1": {"10": 1}, "color_2": {"10": 0}}
+    input = {"prod_cycle": {"1": 3}, "base_id": {"1": 10}, "color": {"1": 0}, "start": {"1": 16.304},
+             "end": {"1": 71.004}}
 
     # Input is a python dictionary. To get a valid json you can use:
     json_input = json.dumps(input)
